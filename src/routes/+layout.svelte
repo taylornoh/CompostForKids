@@ -1,12 +1,12 @@
 <script>
-	//import Titlebar from './titlebar.svelte';
+	import Title from '$lib/Title.svelte';
 </script>
 
 <svelte:head>
 	<title>Compost4Kids</title>
 </svelte:head>
 
+<Title />
 <main>
-  <!--<Titlebar />-->
 	<slot />
 </main>
