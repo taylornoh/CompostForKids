@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>Compost 4 Kids</h1>
 
 <details>
@@ -43,7 +42,3 @@
 		insecurity and sustain generations to come.”
 	</p>
 </details>
-=======
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
->>>>>>> 97c1319 (Revert changes to main page)
