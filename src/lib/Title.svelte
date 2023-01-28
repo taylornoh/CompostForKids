@@ -1,6 +1,6 @@
 <header class="topnav">
-	<a class="active" href="#home">Home</a>
-	<a href="#news">News</a>
-	<a href="#contact">Contact</a>
-	<a href="#about">About</a>
+  <a href="/">Home</a>
+  <a href="/learn">Tutorial</a>
+  <a href="/game">Play</a>
+  <a href="/resources">Resources</a>
 </header>
