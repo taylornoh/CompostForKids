@@ -1,16 +1,16 @@
 <script>
 	import compost_banana from '$lib/images/compost_banana.png';
-	import compost_food from '$lib/images/compost_food.jpeg';
+	import compost_food from '$lib/images/compost_food.png';
 	import compost_sushi from '$lib/images/compost_sushi.png';
-	import compost from '$lib/images/compost.jpeg';
-	import recycle_glass_bottle from '$lib/images/recycle_glass_bottle.jpeg';
-	import recycle_milk from '$lib/images/recycle_milk.jpeg';
-	import recycle_water_bottle from '$lib/images/recycle_water_bottle.jpeg';
-	import recycle from '$lib/images/recycle.jpeg';
-	import trash_bag from '$lib/images/trash_bag.jpeg';
-	import trash_boba_cup from '$lib/images/trash_boba_cup.jpeg';
-	import trash_plastic_bag from '$lib/images/trash_plastic_bag.jpeg';
-	import trash from '$lib/images/trash.jpeg';
+	import compost from '$lib/images/compost.png';
+	import recycle_glass_bottle from '$lib/images/recycle_glass_bottle.png';
+	import recycle_milk from '$lib/images/recycle_milk.png';
+	import recycle_water_bottle from '$lib/images/recycle_water_bottle.png';
+	import recycle from '$lib/images/recycle.png';
+	import trash_bag from '$lib/images/trash_bag.png';
+	import trash_boba_cup from '$lib/images/trash_boba_cup.png';
+	import trash_plastic_bag from '$lib/images/trash_plastic_bag.png';
+	import trash from '$lib/images/trash.png';
 </script>
 
 <h1>Learning Tutorial</h1>
@@ -24,32 +24,20 @@
 	high score!
 </p>
 
-<h2>Trash objects:</h2>
-
-<p>The trash container:</p>
-<img alt="The trash container" src={recycle} />
-
-<p>The trash objects:</p>
+<h2>Trash container and objects:</h2>
+<img alt="The trash container" src={trash} width="200" />
 <img alt="." src={trash_bag} />
 <img alt="." src={trash_boba_cup} />
 <img alt="." src={trash_plastic_bag} />
 
-<h2>Recyclable objects:</h2>
-
-<p>The recycle container:</p>
-<img alt="The trash container" src={recycle} />
-
-<p>The recycable objects:</p>
+<h2>Recyclable container and objects:</h2>
+<img alt="The trash container" src={recycle} width="200" />
 <img alt="." src={recycle_glass_bottle} />
 <img alt="." src={recycle_milk} />
 <img alt="." src={recycle_water_bottle} />
 
-<h2>Compostable objects:</h2>
-
-<p>The recycle container:</p>
-<img alt="The recycle container" src={recycle} />
-
-<p>The recycable objects:</p>
+<h2>Compostable container and objects:</h2>
+<img alt="The compost container" src={compost} width="200" />
 <img alt="." src={compost_banana} />
 <img alt="." src={compost_food} />
 <img alt="." src={compost_sushi} />
