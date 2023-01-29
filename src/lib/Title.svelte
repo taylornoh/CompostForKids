@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0px;
+    padding: 40px 0px 0px 0px !important;
 	}
 
 	a {
