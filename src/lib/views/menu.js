@@ -1,17 +1,34 @@
 import * as PIXI from 'pixi.js';
+import { State, changeState } from '$lib/Game.js';
+import { sound } from '@pixi/sound';
 
-export default class Menu {
-	constructor() {
-		this.container = new PIXI.Container();
-		this.background = PIXI.Sprite.from('images/menu_background.png');
-		this.background.x = 512 / 2 - this.background.width / 2;
-		this.background.y = 512 / 2 - this.background.height / 2;
-		this.container.addChild(this.background);
-		this.button = PIXI.Sprite.from('images/start.png');
-		this.background.addChild(this.button);
-		this.button.width *= 3;
-		this.button.height *= 3;
-		this.button.x = this.background.width / 2 - this.button.width / 2;
-		this.button.y = this.background.height / 2 - this.button.height / 2;
-	}
-}
+export let container;
+
+export const init = async () => {
+	// Menu container
+	container = new PIXI.Container();
+
+	// background
+	await PIXI.Assets.load('/images/menu_background.png');
+	const background = PIXI.Sprite.from('/images/menu_background.png');
+	background.x = 512 / 2 - background.width / 2;
+	background.y = 512 / 2 - background.height / 2;
+	container.addChild(background);
+
+	// Start button
+	await PIXI.Assets.load('/images/menu_start_button.png');
+	const button = PIXI.Sprite.from('/images/menu_start_button.png');
+	button.interactive = true;
+	button.x = background.width / 2 - button.width / 2;
+	button.y = background.height / 2 - button.height / 2;
+	background.addChild(button);
+
+	// Start button click sound
+	sound.add('click', '/sounds/click.wav');
+
+	// Start button click event
+	button.on('pointerdown', (e) => {
+		sound.play('click');
+		changeState(State.IN_GAME);
+	});
+};

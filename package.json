@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@pixi/sound": "^5.0.0",
+		"fontfaceobserver": "^2.3.0",
 		"pixi.js": "^7.1.1"
 	}
 }
