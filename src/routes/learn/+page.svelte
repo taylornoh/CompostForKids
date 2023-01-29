@@ -50,10 +50,10 @@
 
 <style>
 	#rcorners2 {
-			border-radius: 25px;
-			background: rgba(255, 255, 255, 0.8);
-			padding: 20px;
-			width: 100%;
-			height: auto;
-		}
+		border-radius: 25px;
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		width: 100%;
+		height: auto;
+	}
 </style>
