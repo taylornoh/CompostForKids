@@ -1,8 +1,9 @@
 import * as PIXI from 'pixi.js';
 import * as Key from '$lib/input.js';
-import { app } from '$lib/Game.js';
+import { app, changeState, State } from '$lib/Game.js';
 import { item_container } from '$lib/entities/Item.js';
 import { score, updateScore } from '$lib/views/ingame.js';
+import { sound } from '@pixi/sound';
 
 export let sprite;
 let active = false;
@@ -65,23 +66,35 @@ const load_textures = (frames) => {
 	return result;
 };
 
-const throw_to = destination => {
-  console.log(destination);
+const throw_to = (destination) => {
+	console.log(destination);
 
-  if (item_to_throw.texture.textureCacheIds[0].includes(destination)) {
-    console.log("GOOD JOB!!");
-    updateScore(score + 1);
-  } else if (destination == "compost" && item_to_throw.texture.textureCacheIds[0].includes("paper")) {
-    console.log("HALF POINTS!!!!")
-    updateScore(score + 0.5);
-  } else {
-    console.log("YOU SUCK!!")
-  }
-  item_container.removeChild(bg);
-  item_container.removeChild(bg2);
-  item_to_throw = undefined;
-  active = true;
-}
+	if (item_to_throw.texture.textureCacheIds[0].includes(destination)) {
+		console.log('GOOD JOB!!');
+		sound.play('correct');
+		updateScore(score + 1);
+	} else if (
+		destination == 'compost' &&
+		item_to_throw.texture.textureCacheIds[0].includes('paper')
+	) {
+		console.log('HALF POINTS!!!!');
+		sound.play('half');
+		updateScore(score + 0.5);
+	} else {
+		console.log('YOU SUCK!!');
+		sound.play('wrong');
+	}
+	item_container.removeChild(bg);
+	item_container.removeChild(bg2);
+	item_to_throw = undefined;
+	active = true;
+	if (item_container.children.length == 0) {
+		setTimeout(() => {
+			stop();
+			changeState(State.MENU);
+		}, 1000);
+	}
+};
 
 const distance = (s1, s2) => {
 	return Math.sqrt(Math.pow(s1.x - s2.x, 2) + Math.pow(s1.y - s2.y, 2));
@@ -133,6 +146,12 @@ export const init = async () => {
 	left_textures = load_textures(player_left_frames);
 	right_textures = load_textures(player_right_frames);
 
+	sound.add('walk', '/sounds/walk.wav');
+	sound.add('wrong', '/sounds/wrong.wav');
+	sound.add('correct', '/sounds/correct.wav');
+	sound.add('half', '/sounds/half.wav');
+	sound.find('walk').volume = 0.3;
+
 	PIXI.Assets.load('/images/throw_away_background.png');
 	PIXI.Assets.load('/images/logo_background.png');
 	PIXI.Assets.load('/images/logos.jpg');
@@ -149,23 +168,24 @@ export const init = async () => {
 		sprite.height = SIZE * ((sprite.y * 2 - 256) / 512);
 		sprite.y = Math.min(512 - sprite.height, Math.max(sprite.y, 208));
 		sprite.x = Math.min(512 - sprite.width, Math.max(sprite.x, 0));
-    if (active) {
-      for (let item of item_container.children) {
-        if (distance(sprite, item) < 20) {
-          throw_away_item(item);
-        }
-      }
-    } else {
-      if (item_to_throw.y > 270) {
-        if (item_to_throw.x >= 100-50 && item_to_throw.x < 164-50) throw_to("recycle");
-        else if (item_to_throw.x >= 164-50 && item_to_throw.x < 238-50) throw_to("compost");
-        else if (item_to_throw.x >= 238-50 && item_to_throw.x < 307-50) throw_to("trash");
-      }
-    }
+		if (active) {
+			for (let item of item_container.children) {
+				if (distance(sprite, item) < 20) {
+					throw_away_item(item);
+				}
+			}
+		} else {
+			if (item_to_throw.y > 270) {
+				if (item_to_throw.x >= 100 - 50 && item_to_throw.x < 164 - 50) throw_to('recycle');
+				else if (item_to_throw.x >= 164 - 50 && item_to_throw.x < 238 - 50) throw_to('compost');
+				else if (item_to_throw.x >= 238 - 50 && item_to_throw.x < 307 - 50) throw_to('trash');
+			}
+		}
 		if (Key.left.isDown) {
 			if (item_to_throw) item_to_throw.x -= delta * speed;
 			else {
 				sprite.x -= ((sprite.y / 0.59 - 208) / 512) * delta * speed;
+				if (!sound.find('walk').isPlaying) sound.play('walk');
 				if (sprite.textures != left_textures) {
 					sprite.textures = left_textures;
 					sprite.play();
@@ -176,6 +196,7 @@ export const init = async () => {
 			if (item_to_throw) item_to_throw.x += delta * speed;
 			else {
 				sprite.x += ((sprite.y / 0.59 - 208) / 512) * delta * speed;
+				if (!sound.find('walk').isPlaying) sound.play('walk');
 				if (sprite.textures != right_textures) {
 					sprite.textures = right_textures;
 					sprite.play();
@@ -186,6 +207,7 @@ export const init = async () => {
 			if (item_to_throw) item_to_throw.y -= delta * speed;
 			else {
 				sprite.y -= ((sprite.y / 0.59 - 208) / 512) * delta * speed;
+				if (!sound.find('walk').isPlaying) sound.play('walk');
 				if (sprite.textures != back_textures) {
 					sprite.textures = back_textures;
 					sprite.play();
@@ -196,6 +218,7 @@ export const init = async () => {
 			if (item_to_throw) item_to_throw.y += delta * speed;
 			else {
 				sprite.y += ((sprite.y / 0.59 - 208) / 512) * delta * speed;
+				if (!sound.find('walk').isPlaying) sound.play('walk');
 				if (sprite.textures != front_textures) {
 					sprite.textures = front_textures;
 					sprite.play();

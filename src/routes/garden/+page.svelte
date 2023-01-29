@@ -1,12 +1,14 @@
 <script>
-	import Game from '$lib/Game.svelte';
+	import Garden from '$lib/Garden.svelte';
 </script>
 
 <div>
-	<h1>Compost Kid</h1>
-	<p>Use the arrow keys to move!</p>
-	<p>Earn points to grow your <a href="/garden">garden</a>!</p>
-	<Game />
+	<h1>The Garden ^_^</h1>
+	<p>
+		The more points you earn playing <a href="/game">Kid Compost</a>, the bigger your garden will
+		be!
+	</p>
+	<Garden />
 </div>
 
 <style>
@@ -17,6 +19,7 @@
 	p {
 		color: black;
 	}
+
 	div {
 		height: 90vh;
 		min-height: 90vh;

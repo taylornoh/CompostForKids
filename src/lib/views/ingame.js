@@ -11,11 +11,15 @@ let style;
 let scoreText;
 
 export const updateScore = (newScore) => {
-  score = newScore;
-  scoreText.text = "Score: " + newScore;
-}
+	score = newScore;
+	localStorage.setItem('score', newScore);
+	scoreText.text = 'Score: ' + newScore;
+};
 
 export const init = async () => {
+	let store = localStorage.getItem('score');
+	if (store) score = parseInt(store);
+	else store = 0;
 	container = new PIXI.Container();
 	await PIXI.Assets.load('/images/ingame_background.png');
 	const background = PIXI.Sprite.from('/images/ingame_background.png');
@@ -25,11 +29,11 @@ export const init = async () => {
 	container.addChild(Player.sprite);
 	let font = new FontFaceObserver('Press Start 2P', {});
 	await font.load();
-  style = new PIXI.TextStyle({
-    fontFamily: 'Press Start 2P',
-    fontSize: 16
-  });
-	scoreText = new PIXI.Text('Score: 0', style);
+	style = new PIXI.TextStyle({
+		fontFamily: 'Press Start 2P',
+		fontSize: 16
+	});
+	scoreText = new PIXI.Text('Score: ' + score, style);
 	scoreText.x = 12;
 	scoreText.y = 12;
 	container.addChild(scoreText);

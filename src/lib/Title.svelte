@@ -6,6 +6,8 @@
 		&nbsp;
 		<a href="/game">Play</a>
 		&nbsp;
+		<a href="/garden">Garden</a>
+		&nbsp;
 		<a href="/resources">Resources</a>
 	</p>
 </header>
