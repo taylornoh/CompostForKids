@@ -1,15 +1,13 @@
 <script>
 	import * as PIXI from 'pixi.js';
 	import { onMount } from 'svelte';
-	let canv;
+	import { init } from '$lib/state.js';
+	let canvas;
 	let app;
+
 	onMount(() => {
-		app = new PIXI.Application({
-			view: canv,
-			backgroundColor: 0x141414
-		});
-		if (app == null) return;
+		init(canvas);
 	});
 </script>
 
-<canvas bind:this={canv} />
+<canvas bind:this={canvas} />
