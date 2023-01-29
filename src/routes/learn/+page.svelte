@@ -17,46 +17,46 @@ p>
 
 <h2>Trash objects:</h2>
 <p id="rcorners2">
-	<img src="/images/trash/battery.png" width="200" height="200" />
-	<img src="/images/trash/tv.png" width="200" height="200" />
-	<img src="/images/trash/plastic_bag.png" width="400" height="400" />
-	<img src="/images/trash/styrofoam_cup.png" width="150" height="150" />
-	<img src="/images/trash/straw.png" width="200" height="200" />
-	<img src="/images/trash/diaper.png" width="200" height="200" />
-	<img src="/images/trash/plastic_bag_2.png" width="200" height="200" />
+	<img src="/images/trash/battery.png" width="200" height="200" alt="text"/>
+	<img src="/images/trash/tv.png" width="200" height="200" alt="text"/>
+	<img src="/images/trash/plastic_bag.png" width="400" height="400" alt="text"/>
+	<img src="/images/trash/styrofoam_cup.png" width="150" height="150" alt="text"/>
+	<img src="/images/trash/straw.png" width="200" height="200" alt="text"/>
+	<img src="/images/trash/diaper.png" width="200" height="200" alt="text"/>
+	<img src="/images/trash/plastic_bag_2.png" width="200" height="200" alt="text"/>
 </p>
 
 <h2>Recyclable objects:</h2>
 <p id="rcorners2">
-	<img src="/images/recycle/takeout_box.png" width="200" height="200" />
-	<img src="/images/recycle/milk.png" width="150" height="150" />
-	<img src="/images/recycle/bottle.png" width="175" height="175" />
-	<img src="/images/recycle/aluminum_can.png" width="300" height="300" />
-	<img src="/images/recycle/water_bottle.png" width="300" height="300" />
-	<img src="/images/recycle/glass_jar.png" width="300" height="300" />
+	<img src="/images/recycle/takeout_box.png" width="200" height="200" alt="text"/>
+	<img src="/images/recycle/milk.png" width="150" height="150" alt="text"/>
+	<img src="/images/recycle/bottle.png" width="175" height="175" alt="text"/>
+	<img src="/images/recycle/aluminum_can.png" width="300" height="300" alt="text"/>
+	<img src="/images/recycle/water_bottle.png" width="300" height="300" alt="text"/>
+	<img src="/images/recycle/glass_jar.png" width="300" height="300" alt="text"/>
 </p>
 
 <h2>Compostable objects:</h2>
 <p id="rcorners2">
-	<img src="/images/compost/bread.png" width="200" height="200" />
-	<img src="/images/compost/potato.png" width="200" height="200" />
-	<img src="/images/compost/bread_2.png" width="200" height="200" />
-	<img src="/images/compost/tea_bag.png" width="200" height="200" />
-	<img src="/images/compost/eggs.png" width="200" height="200" />
-	<img src="/images/compost/orange.png" width="200" height="200" />
-	<img src="/images/compost/apple.png" width="200" height="200" />
-	<img src="/images/compost/cucumber.png" width="200" height="200" />
-	<img src="/images/compost/banana.png" width="200" height="200" />
-	<img src="/images/compost/strawberry.png" width="200" height="200" />
-	<img src="/images/compost/leaves.png" width="200" height="200" />
+	<img src="/images/compost/bread.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/potato.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/bread_2.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/tea_bag.png" width="200" height="200"alt="text" />
+	<img src="/images/compost/eggs.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/orange.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/apple.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/cucumber.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/banana.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/strawberry.png" width="200" height="200" alt="text"/>
+	<img src="/images/compost/leaves.png" width="200" height="200" alt="text"/>
 </p>
 
 <h2>Compostable and recyclable objects:</h2>
 <p id="rcorners2">
-	<img src="/images/recycle/paper_plate.png" width="200" height="200" />
-	<img src="/images/recycle/paper_box.png" width="200" height="200" />
-	<img src="/images/recycle/paper_towels.png" width="200" height="200" />
-	<img src="/images/recycle/toilet_paper.png" width="300" height="300" />
+	<img src="/images/recycle/paper_plate.png" width="200" height="200" alt="text"/>
+	<img src="/images/recycle/paper_box.png" width="200" height="200" alt="text"/>
+	<img src="/images/recycle/paper_towels.png" width="200" height="200" alt="text"/>
+	<img src="/images/recycle/toilet_paper.png" width="300" height="300" alt="text"/>
 </p>
 
 <style>
