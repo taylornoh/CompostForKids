@@ -21,9 +21,6 @@
 	}
 
 	div {
-		height: 90vh;
-		min-height: 90vh;
-		max-height: 90vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
