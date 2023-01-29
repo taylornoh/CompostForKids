@@ -38,4 +38,12 @@ scrape from
 
 Items
 
+- =======
+- get 8 bit sounds for everything
+
+Dynamic Compost locations in game using location
+scrape from
+
+Items
+
 -

@@ -10,20 +10,19 @@
 	</p>
 </header>
 
-
 <style>
 	header {
 		font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0px 0px 0px !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 40px 0px 0px 0px !important;
 	}
 
 	a {
 		color: black;
-    margin: auto 20px;
+		margin: auto 20px;
 	}
 
 	#rcorners2 {
@@ -32,9 +31,9 @@
 		padding: 20px;
 		margin-right: 20px;
 		height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 	}
 </style>
