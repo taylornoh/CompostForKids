@@ -49,15 +49,30 @@
 	</details>
 
 	<details>
-		<summary>How can composting tackle the issue of food insecurity?</summary>
-		<p>
-			According to <a
-				href="https://www.ecorichenv.com/news/how-composting-can-help-save-the-planet#:~:text=Composting%20Can%20Minimize%20Food%20Insecurity&text=As%20mentioned%20above%2C%20compost%20can,and%20sustain%20generations%20to%20come."
-				>EcoRich</a
-			>, “Compost can reduce the cost of food production and produce higher, more nutrition-rich
-			yields. This will result in a more resilient food system that will be able to end food
-			insecurity and sustain generations to come.”
-		</p>
+		<summary>LGBTQ+ Supportive Food Banks</summary>
+		<table>
+			<tr>
+				<th>Name and Operator</th>
+				<th>Address</th>
+				<th>Phone</th>
+			</tr>
+			<tr>
+				<td>Los Angeles LGBT Center</td>
+				<td>Anita May Rosenstein Campus 1118 N. McCadden Place
+					<br/>Los Angeles, CA 90038</td>
+				<td>(323) 993-7400</td>
+			</tr>
+			<tr>
+				<td>Center South Pride Pantry</td>
+				<td>2313 W. Martin Luther King Jr.Blvd,<br />Los Angeles, CA 90008 United States</td>
+				<td>(323) 860-3799</td>
+			</tr>
+			<tr>
+				<td>Mi Centro Pride Pantry<br /></td>
+				<td>Mi Centro 533 S Clarence St<br/>Los Angeles, CA 90033</td>
+				<td>(323) 286-7224</td>
+			</tr>
+		</table>
 	</details>
 </p>
 
