@@ -8,6 +8,7 @@
 	<title>Compost4Kids</title>
 </svelte:head>
 
+<img class="background" src="/images/background.png"/>
 <Title />
 <main>
   <slot />

@@ -10,16 +10,20 @@
 	</p>
 </header>
 
-<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet" />
 
 <style>
 	header {
-		font-family: 'Space Mono';
 		font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
 	}
 
 	a {
 		color: black;
+    margin: auto 20px;
 	}
 
 	#rcorners2 {
@@ -28,5 +32,9 @@
 		padding: 20px;
 		margin-right: 20px;
 		height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 	}
 </style>
