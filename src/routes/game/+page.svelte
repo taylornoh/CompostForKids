@@ -5,8 +5,6 @@
 <div>
 	<h1>Compost Kid</h1>
 	<p>Use the arrow keys to move!</p>
-	<h1>Compost Kid</h1>
-	<p>Use the arrow keys to move!</p>
 	<Game />
 </div>
 
