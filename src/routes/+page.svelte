@@ -1,8 +1,8 @@
 <h1>Compost 4 Kids</h1>
-
+<p id="rcorners2">
 <details>
 	<summary>Who are we?</summary>
-	<p>
+	<p >
 		Compost4Kids is an educational web application targeted for youth and local policy makers to
 		promote and integrate into their K-12 curriculum. We aim to partner with the <a
 			href="https://laes-lausd-ca.schoolloop.com/">Los Angeles Unified School District</a
@@ -42,3 +42,15 @@
 		insecurity and sustain generations to come.”
 	</p>
 </details>
+
+</p>
+
+<style>
+#rcorners2 {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+</style>
