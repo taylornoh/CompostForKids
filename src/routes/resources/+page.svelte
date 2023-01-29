@@ -50,7 +50,13 @@
 
     <details>
         <summary>Sustainable Agriculture and Food Events</summary>
-        
+        <div>
+        <p>
+            <img src="/images/calendar_2.png" 
+            width="800" 
+            height="900">
+        </p>
+        </div>
     </details>
 
     <details>
