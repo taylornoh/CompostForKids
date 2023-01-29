@@ -11,12 +11,11 @@
 
 <p id="rcorners2">
 	Use the arrow keys in order to navigate the character. In order to score points, drag the trash to
-	the correct disposal unit. Disposing of an object in the correct bin yields a point, but paper
-	objects yield half points for composting instead of recycling.
+	the correct disposal unit. Paper objects can be disposed in both composting and recycling.
 </p>
 p>
 
-<h2>Trash container and objects:</h2>
+<h2>Trash objects:</h2>
 <p id="rcorners2">
 	<img src="/images/trash/battery.png" width="200" height="200" />
 	<img src="/images/trash/tv.png" width="200" height="200" />
@@ -27,7 +26,7 @@ p>
 	<img src="/images/trash/plastic_bag_2.png" width="200" height="200" />
 </p>
 
-<h2>Recyclable container and objects:</h2>
+<h2>Recyclable objects:</h2>
 <p id="rcorners2">
 	<img src="/images/recycle/takeout_box.png" width="200" height="200" />
 	<img src="/images/recycle/milk.png" width="150" height="150" />
@@ -35,10 +34,9 @@ p>
 	<img src="/images/recycle/aluminum_can.png" width="300" height="300" />
 	<img src="/images/recycle/water_bottle.png" width="300" height="300" />
 	<img src="/images/recycle/glass_jar.png" width="300" height="300" />
-	<img src="/images/recycle/toilet_paper.png" width="300" height="300" />
 </p>
 
-<h2>Compostable container and objects:</h2>
+<h2>Compostable objects:</h2>
 <p id="rcorners2">
 	<img src="/images/compost/bread.png" width="200" height="200" />
 	<img src="/images/compost/potato.png" width="200" height="200" />
@@ -53,10 +51,12 @@ p>
 	<img src="/images/compost/leaves.png" width="200" height="200" />
 </p>
 
+<h2>Compostable and recyclable objects:</h2>
 <p id="rcorners2">
 	<img src="/images/recycle/paper_plate.png" width="200" height="200" />
 	<img src="/images/recycle/paper_box.png" width="200" height="200" />
 	<img src="/images/recycle/paper_towels.png" width="200" height="200" />
+	<img src="/images/recycle/toilet_paper.png" width="300" height="300" />
 </p>
 
 <style>
