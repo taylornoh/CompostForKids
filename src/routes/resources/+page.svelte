@@ -1,6 +1,6 @@
-<h1>Resources</h1>
+<h1 class="rcorners">Resources</h1>
 <link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet" />
-<p id="rcorners2">
+<p class="rcorners">
 	<details>
 		<summary>Los Angeles County Composting Sites</summary>
 		<table>
@@ -77,7 +77,7 @@
 </p>
 
 <style>
-	#rcorners2 {
+	.rcorners {
 		border-radius: 25px;
 		background: rgba(255, 255, 255, 0.8);
 		padding: 20px;
