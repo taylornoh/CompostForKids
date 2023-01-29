@@ -1,4 +1,10 @@
-<h1>Compost 4 Kids</h1>
+<h1>
+    Compost 4 Kids  
+    <img src="/images/plant.gif" 
+                width="80" 
+                height="90">
+</h1>
+
 <link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet" />
 <p id="rcorners2">
 	<details>

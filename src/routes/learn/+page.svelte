@@ -15,7 +15,7 @@
 
 <h1>Learning Tutorial</h1>
 
-<p>
+<p id="rcorners2">
 	Welcome to the Compost4Kids! In this game, you will learn about the importance of composting and
 	how it can benefit the environment. Your goal is to sort various trash objects into their correct
 	bins: trash, compost, and recycling. Each correct sorting will help you expand and beautify your
@@ -25,19 +25,35 @@
 </p>
 
 <h2>Trash container and objects:</h2>
-<img alt="The trash container" src={trash} width="200" />
-<img alt="." src={trash_bag} />
-<img alt="." src={trash_boba_cup} />
-<img alt="." src={trash_plastic_bag} />
+<p id="rcorners2">
+	<img alt="The trash container" src={trash} width="200" />
+	<img alt="." src={trash_bag} />
+	<img alt="." src={trash_boba_cup} />
+	<img alt="." src={trash_plastic_bag} />
+</p>
 
 <h2>Recyclable container and objects:</h2>
-<img alt="The trash container" src={recycle} width="200" />
-<img alt="." src={recycle_glass_bottle} />
-<img alt="." src={recycle_milk} />
-<img alt="." src={recycle_water_bottle} />
+<p id="rcorners2">
+	<img alt="The trash container" src={recycle} width="200" />
+	<img alt="." src={recycle_glass_bottle} />
+	<img alt="." src={recycle_milk} />
+	<img alt="." src={recycle_water_bottle} />
+</p>
 
 <h2>Compostable container and objects:</h2>
-<img alt="The compost container" src={compost} width="200" />
-<img alt="." src={compost_banana} />
-<img alt="." src={compost_food} />
-<img alt="." src={compost_sushi} />
+<p id="rcorners2">
+	<img alt="The compost container" src={compost} width="200" />
+	<img alt="." src={compost_banana} />
+	<img alt="." src={compost_food} />
+	<img alt="." src={compost_sushi} />
+</p>
+
+<style>
+	#rcorners2 {
+			border-radius: 25px;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+			width: 100%;
+			height: auto;
+		}
+</style>
