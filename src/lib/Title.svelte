@@ -14,7 +14,6 @@
 
 <style>
 	header {
-		padding-bottom: 20px;
 		font-family: 'Space Mono';
 		font-size: 22px;
 	}

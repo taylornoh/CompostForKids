@@ -1,5 +1,6 @@
 <script>
 	import Title from '$lib/Title.svelte';
+	import Footer from '$lib/Footer.svelte';
 	import '../app.css';
 </script>
 
@@ -7,7 +8,8 @@
 	<title>Compost4Kids</title>
 </svelte:head>
 
+<Title />
 <main>
-	<Title />
-	<slot />
+  <slot />
 </main>
+<Footer />
