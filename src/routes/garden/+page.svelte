@@ -5,10 +5,10 @@
 <div>
   <div class="rcorners">
     <h1>The Garden ^_^</h1>
-    <p>
-      The more points you earn playing <a href="/game">Compost Kid</a>, the bigger your garden will
-      be!
-    </p>
+		<p>
+			The more points you earn playing <a href="/game">Compost Kid</a>, the bigger your garden will
+			be!
+		</p>
   </div>
 	<Garden />
 </div>

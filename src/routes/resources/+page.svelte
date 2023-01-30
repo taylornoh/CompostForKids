@@ -1,4 +1,4 @@
-<h1 class="rcorners">Resources</h1>
+<center><h1 class="corners">Resources&nbsp<img src="/images/plant.gif" width="80" height="90"></h1></center>
 <link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet" />
 <p class="rcorners">
 	<details>
@@ -101,5 +101,14 @@
 
 	div {
 		text-align: center;
+	}
+
+	.corners {
+		border-radius: 25px;
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		height: auto;
+		width: 40%;
+		align: center;
 	}
 </style>

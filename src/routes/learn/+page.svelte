@@ -1,4 +1,4 @@
-<h1 class="rcorners">Learning Tutorial</h1>
+<center><h1 class="corners">Learning Tutorial</h1></center>
 
 <p class="rcorners">
 	Welcome to the Compost4Kids! In this game, you will learn about the importance of composting and
@@ -65,5 +65,14 @@
 		padding: 20px;
 		width: 100%;
 		height: auto;
+	}
+
+	.corners {
+		border-radius: 25px;
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		height: auto;
+		width: 50%;
+		align: center;
 	}
 </style>

@@ -1,7 +1,8 @@
-<h1 class="rcorners">
-  Compost 4 Kids
-	<img src="/images/plant.gif" width="80" height="90" />
-</h1>
+<center>
+	<h1 class="corners">
+	Compost 4 Kids&nbsp<img src="/images/plant.gif" width="80" height="90" />
+	</h1>
+</center>
 
 <link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet" />
 <p class="rcorners">
@@ -58,6 +59,15 @@
 		height: auto;
 	}
 
+	.corners {
+		border-radius: 25px;
+		background: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		height: auto;
+		width: 50%;
+		align: center;
+	}
+
 	p {
 		font-family: 'Space Mono';
 		font-size: 22px;
@@ -66,9 +76,10 @@
 	h1 {
 		font-family: 'Space Mono';
 		font-size: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		text-align: center;
 	}
 </style>

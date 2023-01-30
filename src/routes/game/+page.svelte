@@ -5,8 +5,7 @@
 <div class="contain">
   <div class="rcorners">
     <h1 >Compost Kid</h1>
-    <p>Use the arrow keys to move!</p>
-    <p>Earn points to grow your <a href="/garden">garden</a>!</p>
+    <center><p>Use the arrow keys to move!<br>Earn points to grow your <a href="/garden">garden</a>!</p></center>
   </div>
 	<Game />
 </div>
@@ -22,6 +21,8 @@
 		border-radius: 25px;
 		background-color: rgba(255, 255, 255, 0.8);
 		padding: 10px;
+	padding-bottom: 0px;
+	width: 50%;	
 	}
 
 	h1 {
