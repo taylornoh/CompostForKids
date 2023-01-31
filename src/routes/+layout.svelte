@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Compost4Kids</title>
+	<title>Compost 4 Kids</title>
 </svelte:head>
 
 <Title />
