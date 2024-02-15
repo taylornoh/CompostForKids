@@ -1,4 +1,4 @@
-# About Compost4Kids
+# About Compost-4-Kids
 
 Awarded Best Technical Project at UCLA QWER Hacks.
 
